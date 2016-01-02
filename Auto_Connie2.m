@@ -1,7 +1,7 @@
 function Contrasted_Image2 = Auto_Connie2(image, Param)
 %This simply applies a very narrow grayLevel regime in the low, medium or
 %high greylevel.  Low:  .2-.3, med:  .5-.6, High: .8-.9
-%Written by David Nedrelow, 09/15/15
+%Written by David Nedrelow, 09/23/15
 
 if (size(image, 3) == 3)
     grayImage = rgb2gray(image);
