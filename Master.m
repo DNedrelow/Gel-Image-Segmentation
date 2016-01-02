@@ -1,4 +1,5 @@
 %Master Contrast
+%Written by David Nedrelow, 09/25/15
 clear all
 close all
 
