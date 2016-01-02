@@ -88,8 +88,8 @@ end
 %lets go one at a time.  We will need to ask the user to hit GO when they
 %are ready for roboto to work.  (ie run the horse function)  %simply create
 %a new function horse and then run it in the callback function on
-%Contrast_UI.  So now, alls you really have to do is write the horse and
-%call UI
+%Contrast_UI.  So now, alls you really have to do is write the parameter 
+%assignment routine and call the UI
 close all;
 for idc = 1:n
   
@@ -140,11 +140,17 @@ for idc = 1:n
 
         d=dir('testicios.csv');   % return the list of csv files 
         m = textread(d.name,'','headerlines',1); 
-       %Diameter{:,idc} = m;
         Dia = cat(2, Dia, m);
      cd(oldFolder);
 end
 %fname
+output = mat2dataset(Dia);
+
+%output with filename similar to input .csv
+[pathstr,name,ext] = fileparts(fname{1}) ;
+str = ['.csv'];
+s = [name, str];
+export(output,'File', s, 'Delimiter',',');
 output = mat2dataset(Dia);
 
 %output with similar filename as .csv
