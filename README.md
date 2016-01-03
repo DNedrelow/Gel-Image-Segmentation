@@ -1,7 +1,7 @@
 # Gel-Image-Segmentation
 Written by David Nedrelow, 12/01/15
 This is a custom matlab routine written to automate the measurement of gel diagmeters taken from experimental images.  
-It was written and tested on Matlab_r2015a, a version downloaded on February 12, 2015.  There are known issues within the GUI when run on older versions of Matlab, but these may be resolved by updating Matlab.
+It was written and tested on Matlab_r2015a, a version downloaded on February 12, 2015.  There are known issues within the GUI when run on older versions of Matlab, but these may be resolved by updating Matlab.  This routine will not work without a .wav soundfile named "Domo.wav" contained in the same folder.  This can be obtained by contacting the corresponding author.
 
 Procedure:
 1.  Copy and paste all of these files into a folder along with the .tif image files you wish to analyze.
